@@ -3,64 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kevin's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Kevin Yin</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 30px;
+      border-bottom: 2px solid #0077b6;
+      padding-bottom: 5px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .sub-heading {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>Kevin Yin</h1>
+    <p>linkedin.com/in/yin-kevin | kyin42@gatech.edu</p>
   </header>
 
-  <section id="hero">
-    <img src="assets/profile-pic.jpg" alt="Your Photo">
-    <h1>Hello, I'm Kevin</h1>
-    <p>Software Engineer | Cloud Enthusiast | Problem Solver</p>
-    <button onclick="alert('Welcome to my portfolio!')">Say Hi!</button>
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Georgia Institute of Technology</strong> <br> MS in Computer Science (GPA: 4.00/4.00) | Atlanta, GA | August 2023 - May 2025</p>
+    <ul>
+      <li>Representative Recent Coursework: Machine Learning, Computer Networks, Graduate Algorithms, Database Systems Concepts and Design, Network Science, Software Development Process</li>
+    </ul>
+    <p><strong>Georgia Institute of Technology</strong> <br> BS in Mathematics (GPA: 3.62/4.00) | Atlanta, GA | August 2017 - May 2022</p>
+    <ul>
+      <li>Representative Recent Coursework: Graph Theory, Stochastic Processes, Object Oriented Programming, Calculus III, Differential Equations, Information Theory, Probability Theory, Real Analysis, Complex Analysis</li>
+    </ul>
   </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a passionate software engineer with expertise in cloud computing, distributed systems, 
-      and Kubernetes. I love solving complex problems and building robust solutions for modern infrastructures.
-    </p>
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="sub-heading">Pinterest | Software Engineering Intern | Remote | June 2024 - September 2024</div>
+    <ul>
+      <li>Backend infrastructure software engineering intern on the Cloud Runtime Team.</li>
+      <li>Designed and implemented in Go a core dump support feature for our Kubernetes platform, enabling users to efficiently save and access core dumps for debugging purposes.</li>
+      <li>Enhanced developer experience by potentially reducing debugging time and increasing confidence in the platform’s reliability.</li>
+      <li>Collaborated with platform users to tailor the core dump feature to their specific use cases, ensuring its effectiveness and usability.</li>
+      <li>Engaged with cross-functional teams to make informed design choices and conducted presentations to both users and internal teams for feedback and improvements.</li>
+    </ul>
+    <div class="sub-heading">Emory School of Medicine | Research Specialist | Atlanta, GA | June 2022 - July 2023</div>
+    <ul>
+      <li>Established the novel machine learning bio-informatics data analysis pipeline for the lab, processing raw sequencing data and producing publishable figures and results.</li>
+      <li>Techniques include UMAP, T-SNE, K-means clustering, Differential Gene analysis, Gene Set enrichment, STAR alignment, Data Cleaning and Preparation.</li>
+      <li>Resulting figures helped PI gain a 2.5 million dollar Joint DOD grant to continue additional research.</li>
+      <li>Showcased data pipeline and preliminary results at Southeast Brain Tumor Society Meeting 2023.</li>
+    </ul>
+    <div class="sub-heading">Georgia Tech School of Biology | Petit Undergraduate Research Scholar | Atlanta, GA | May 2018 - May 2022</div>
+    <ul>
+      <li>Wrote Python programs to conduct multiple feature analysis of calcium pulses of migrating neural crest cells.</li>
+      <li>Presented work in 2022 Southeast Developmental Biology Meeting, winning best undergraduate poster.</li>
+    </ul>
+    <div class="sub-heading">Georgia Tech School of Mathematics/Computer Science | Teaching Assistant | Atlanta, GA | May 2018 - May 2022</div>
+    <ul>
+      <li>Computer Science Teaching Assistant for Introduction to Computing.</li>
+      <li>Mathematics Teaching Assistant for Differential Calculus, Integral Calculus, Calculus for Life Science, and Differential Equations.</li>
+    </ul>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project 1: Core Dump Cloud Runtime</h3>
-      <p>
-        Designed and implemented a core dump support system for a cloud runtime platform, ensuring reliable storage and retrieval of crash data.
-      </p>
-      <a href="https://github.com/example/core-dump-project" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project">
-      <h3>Project 2: North Avenue Automotive</h3>
-      <p>
-        Built a full-stack application to manage vehicle inventory, track sales, and generate business reports.
-      </p>
-      <a href="https://github.com/example/north-ave-auto" target="_blank">View on GitHub</a>
-    </div>
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li><strong>Teaching 2019:</strong> Joyner, D. A., et al. "From Clusters to Content: Using Code Clustering for Course Improvement." SIGCSE, 2019.</li>
+      <li><strong>Biology 2020:</strong> Mo, J., et al. "Humanized Neurofibroma Model from Induced Pluripotent Stem Cells." JCI, 2020.</li>
+    </ul>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:kevin@example.com">kevin@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">@yourusername</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, Golang, R, SQL, Java</li>
+      <li><strong>Technologies:</strong> Kubernetes, Docker, Linux, Git, AWS, Jenkins, Flask, PostgreSQL</li>
+      <li><strong>Skills:</strong> Cloud Infrastructure, Cloud Computing, Backend Development, CI/CD Pipeline, Core Dump Analysis, Machine Learning</li>
+    </ul>
   </section>
-
-  <footer>
-    <p>&copy; 2025 Kevin | Built with ❤️ and hosted on GitHub Pages</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
